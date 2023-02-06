@@ -14,6 +14,8 @@
 		FEA5E2B5298FEF0B003418FC /* APub_3_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA5E2B4298FEF0B003418FC /* APub_3_0Tests.swift */; };
 		FEA5E2BF298FEF0B003418FC /* APub_3_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA5E2BE298FEF0B003418FC /* APub_3_0UITests.swift */; };
 		FEA5E2C1298FEF0B003418FC /* APub_3_0UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA5E2C0298FEF0B003418FC /* APub_3_0UITestsLaunchTests.swift */; };
+		FEA5E2D129900F6E003418FC /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA5E2D029900F6E003418FC /* Beer.swift */; };
+		FEA5E2D42990104F003418FC /* BeerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA5E2D32990104F003418FC /* BeerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		FEA5E2BA298FEF0B003418FC /* APub 3.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "APub 3.0UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEA5E2BE298FEF0B003418FC /* APub_3_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APub_3_0UITests.swift; sourceTree = "<group>"; };
 		FEA5E2C0298FEF0B003418FC /* APub_3_0UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APub_3_0UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FEA5E2D029900F6E003418FC /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		FEA5E2D32990104F003418FC /* BeerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +98,10 @@
 		FEA5E2A2298FEF09003418FC /* APub 3.0 */ = {
 			isa = PBXGroup;
 			children = (
-				FEA5E2A3298FEF09003418FC /* APub_3_0App.swift */,
-				FEA5E2A5298FEF09003418FC /* ContentView.swift */,
-				FEA5E2A7298FEF0A003418FC /* Assets.xcassets */,
+				FEA5E2CD29900F38003418FC /* Application */,
+				FEA5E2CF29900F54003418FC /* Views */,
+				FEA5E2D229900F88003418FC /* Models */,
+				FEA5E2CE29900F42003418FC /* Resources */,
 				FEA5E2A9298FEF0A003418FC /* Preview Content */,
 			);
 			path = "APub 3.0";
@@ -125,6 +130,39 @@
 				FEA5E2C0298FEF0B003418FC /* APub_3_0UITestsLaunchTests.swift */,
 			);
 			path = "APub 3.0UITests";
+			sourceTree = "<group>";
+		};
+		FEA5E2CD29900F38003418FC /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				FEA5E2A3298FEF09003418FC /* APub_3_0App.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		FEA5E2CE29900F42003418FC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FEA5E2A7298FEF0A003418FC /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FEA5E2CF29900F54003418FC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FEA5E2A5298FEF09003418FC /* ContentView.swift */,
+				FEA5E2D32990104F003418FC /* BeerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FEA5E2D229900F88003418FC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FEA5E2D029900F6E003418FC /* Beer.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +296,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEA5E2A6298FEF09003418FC /* ContentView.swift in Sources */,
+				FEA5E2D129900F6E003418FC /* Beer.swift in Sources */,
+				FEA5E2D42990104F003418FC /* BeerView.swift in Sources */,
 				FEA5E2A4298FEF09003418FC /* APub_3_0App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
